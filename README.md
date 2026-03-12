@@ -31,7 +31,7 @@ TICKETS (8 permisos)
 const predefinedUsers = [
   // ADMIN - Todos los permisos (21 total)
   {
-    email: 'admin@jira.com',
+    email: 'admin@marher.com',
     password: '$2b$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password: 'password'
     permissions: [
       // USERS (7)
@@ -45,7 +45,7 @@ const predefinedUsers = [
 
   // 👨‍💼 PROJECT MANAGER - Gestión tickets + grupos
   {
-    email: 'pm@jira.com',
+    email: 'pm@marher.com',
     password: '$2b$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password: 'password'
     permissions: [
       // USERS (básico)
@@ -59,7 +59,7 @@ const predefinedUsers = [
 
   // 🛠️ DEVELOPER - Tickets propios + colaboración
   {
-    email: 'dev@jira.com',
+    email: 'dev@marher.com',
     password: '$2b$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password: 'password'
     permissions: [
       // USERS (solo perfil)
@@ -73,7 +73,7 @@ const predefinedUsers = [
 
   // 📝 SUPPORT - Solo tickets + comentarios
   {
-    email: 'support@jira.com',
+    email: 'support@marher.com',
     password: '$2b$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password: 'password'
     permissions: [
       // USERS (solo perfil)
