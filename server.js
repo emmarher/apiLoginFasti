@@ -142,8 +142,9 @@ fastify.get('/permissions', async (request, reply) =>{
 
 const start = async () => {
     try {
-        await fastify.listen({ port: 3000 });
-        fastify.log.info('Servidor en http://localhost:3000');
+        const port = process.env.PORT || 8080;
+        await fastify.listen({ port, host: '0.0.0.0' });
+        fastify.log.info(`Servidor en puerto ${port}`);
     } catch (err) {
         fastify.log.error(err);
         process.exit(1);
