@@ -132,6 +132,14 @@ fastify.get('/profile', async (request, reply) =>{
     }]);
 });
 
+fastify.get('/health', async (request, reply) =>{
+    return reply.sendResponse(200, 0, [{message: 'Servidor OK', timestamp: new Date().toISOString(), version: '1.0.0', service: 'login-api'}]);
+});
+
+fastify.get('/permissions', async (request, reply) =>{
+    return reply.sendResponse(200, 0, [{permissions: users[0].permissions}]);
+});
+
 const start = async () => {
     try {
         await fastify.listen({ port: 3000 });
