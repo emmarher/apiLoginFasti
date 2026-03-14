@@ -12,11 +12,11 @@ const predefinedUsers = [
     password: '$p4$ww0rD1234', // password: 'password'
     permissions: [
       // USERS (7)
-      'user:view', 'user:add', 'user:edit', 'user:edit:profile', 'user:delete', 'user:manage',
+      'user:view', 'user:add', 'user:edit', 'user:edit:profile', 'user:delete', 'user:assign', 'user:view:all', 'user:edite:permissions', 'user:deactivate', 'user:activate', 'user:manage',
       // GROUPS (6)
-      'group:view', 'group:add', 'group:edit', 'group:delete', 'group:manage',
+      'group:view', 'group:add', 'group:edit', 'group:delete', 'group:add:member', 'group:remove:member', 'group:manage',
       // TICKETS (8)
-      'ticket:view', 'ticket:add', 'ticket:edit', 'ticket:delete', 'ticket:edit:state', 'ticket:edit:comment', 'ticket:manage'
+      'ticket:view', 'ticket:add', 'ticket:edit', 'ticket:delete', 'ticket:edit:state', 'ticket:edit:comment', 'ticket:edit:priority', 'ticket:edit:deadline', 'ticket:edit:asiggn', 'ticket:manage'
     ]
   },
 
